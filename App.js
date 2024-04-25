@@ -33,9 +33,9 @@ app.get('/', (req, res) => {
     console.log('Received request with userType:', userType);
 
     if (userType === 'student') {
-        res.sendFile(__dirname + '/Main_Interface/Student_Interface.html');
+        res.sendFile(__dirname + 'Student_Interface.html');
     } else if (userType === 'warden') {
-        res.sendFile(__dirname + '/Main_Interface/Warden_Interface.html');
+        res.sendFile(__dirname + 'Warden_Interface.html');
     } else {
         console.log('Invalid userType:', userType);
         res.status(400).send('Invalid user type');
